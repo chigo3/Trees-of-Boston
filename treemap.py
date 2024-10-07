@@ -1,12 +1,3 @@
-"""
-Created on Wed Apr 10 23:16:52 2024
-
-@author: Chigozirim Ike
-NUID: 002217920
-DS2000 Programming with Data
-File: tree.py
-Descriprtion:
-"""
 import json
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +6,7 @@ import matplotlib.pyplot as plt
 def read_trees(filename):
     """ Read the tree data into a dictionary """
     with open(filename, 'r') as file:
-        tree_data = json.load(file)
+        tree_data = json.load(file) 
     return tree_data
     
 
@@ -45,7 +36,7 @@ def plot_trees(grid, title=""):
     plt.figure(figsize=(10,10))
     plt.title(title)
     plt.grid()
-    plt.imshow(grid, cmap='viridis')
+    plt.imshow(grid, cmap='magma')
     plt.savefig("treemap.png")
     
 
